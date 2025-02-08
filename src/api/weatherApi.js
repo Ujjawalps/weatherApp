@@ -1,5 +1,7 @@
-const API_KEY = "e7bfa4bd8c7c44c1875111357232507";
+const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
+const GEO_API_KEY = import.meta.env.VITE_GEO_DB_API_KEY;
 const BASE_URL = "https://api.weatherapi.com/v1";
+const GEO_BASE_URL = "https://wft-geo-db.p.rapidapi.com/v1/geo";
 
 // Fetch current weather by city name
 export const fetchWeatherByCity = async (city) => {
@@ -37,8 +39,6 @@ export const fetchWeatherByCoords = async (lat, lon) => {
   }
 };
 
-const GEO_API_KEY = "9bad42b8damshe980036daa32af1p171da0jsn373e8cf3f0c9"; // Replace with your API Key
-const GEO_BASE_URL = "https://wft-geo-db.p.rapidapi.com/v1/geo";
 
 export const fetchCitySuggestions = async (query) => {
   try {

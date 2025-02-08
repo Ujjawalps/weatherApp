@@ -1,0 +1,18 @@
+.dark {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+.dark .weather-card {
+  background: #222;
+  color: white;
+}
+
+.dark button {
+  background-color: #444;
+  color: white;
+}
+
+.dark h1 {
+  color: white;
+}

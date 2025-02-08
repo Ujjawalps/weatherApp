@@ -9,19 +9,22 @@ const Header = ({ darkMode, toggleDarkMode, unit, toggleUnit, favorites, handleS
 
       <div className="d-flex align-items-center gap-3">
         {/* Theme Toggle */}
-        <button className="btn btn-light" onClick={toggleDarkMode}>
-          {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
+        <button className="btn btn-light d-flex align-items-center" onClick={toggleDarkMode}>
+          <span className="d-none d-md-inline">{darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}</span>
+          <span className="d-md-none">{darkMode ? "☀️" : "🌙"}</span>
         </button>
 
         {/* Temperature Unit Toggle */}
-        <button className="btn btn-primary" onClick={toggleUnit}>
-          Switch to °{unit === "C" ? "F" : "C"}
+        <button className="btn btn-primary d-flex align-items-center" onClick={toggleUnit}>
+          <span className="d-none d-md-inline">Switch to °{unit === "C" ? "F" : "C"}</span>
+          <span className="d-md-none">🌡️</span>
         </button>
 
         {/* Saved Locations Dropdown */}
         <div className="position-relative">
-          <button className="btn btn-warning" onClick={() => setShowDropdown(!showDropdown)}>
-            ⭐ Saved Locations
+          <button className="btn btn-warning d-flex align-items-center" onClick={() => setShowDropdown(!showDropdown)}>
+            <span className="d-none d-md-inline">⭐ Saved Locations</span>
+            <span className="d-md-none">⭐</span>
           </button>
 
           {showDropdown && (

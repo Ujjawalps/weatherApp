@@ -9,7 +9,7 @@ A **fully responsive Weather App** built using **React, Vite, Bootstrap**, and *
 - ⏳ **Smooth Loading Spinner**
 - 🖼️ **Dynamic Backgrounds based on weather**
 
-🚀 **Live Demo**: [https://weather-app-seven-pearl-65.vercel.app/](#)
+🚀 **Live Demo**: [https://skycastx.vercel.app/](#)
 
 ---
 
